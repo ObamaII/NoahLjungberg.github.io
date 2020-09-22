@@ -1,0 +1,21 @@
+body {
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-family: "Comic Sans MS", "Comic Sans";
+
+    width: 1500px;
+    height: 1500px;
+    /* Lägg webbsidam i mitten*/
+    margin-left: auto; 
+    margin-right: auto;
+
+    /* Ram på body*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}
+h1 {
+    background-color: white;
+    color: black;
+  }
