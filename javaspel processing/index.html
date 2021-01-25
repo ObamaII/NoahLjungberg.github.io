@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script language="JavaScript">
+
+    function dollarOmvandlare(valNum) {
+      valNum = parseFloat(valNum);
+      document.getElementById("dollar").innerHTML = valNum / 8.28;
+    }
+    function kmhtillms(valNum) {
+      valNum = parseFloat(valNum);
+      document.getElementById("meterpersekund").innerHTML = valNum / 3.6;
+    }
+    function temperaturomvandlare(valNum) {
+      valNum = parseFloat(valNum);
+      document.getElementById("Celsius").innerHTML = (valNum - 32) / 1.8;
+    }
+  </script>
+  <title>Olika omvandlare</title>
+<body>
+
+<h2>Fahrenheit till Celsius</h2>
+  <p>Skriv in en temperaur i Fahrenheit och få ut den i Celsius. Baserad på processinguppgiften 4-3.</p>
+
+  <p>
+    <label>Fahrenheit</label>
+    <input id="Fahrenheitinput" type="number" placeholder="Fahrenheit" oninput="temperaturomvandlare(this.value)"
+      onchange="temperaturomvandlare(this.value)">
+  </p>
+<p>Celcius: <span id="Celsius"></span></p>
+
+
+
+
+
+<h2>Svenska kronor till dollar</h2>
+  <p>Skriv in kronor. Baserad på processinguppgiften 4-4.</p>
+
+  <p>
+    <label>Sv</label>
+    <input id="kronor" type="number" placeholder="kronor" oninput="dollarOmvandlare(this.value)"
+      onchange="dollarOmvandlare(this.value)">
+  </p>
+<p>Dollar: <span id="dollar"></span></p>
+
+</br>
+
+<p>Skriv in kilometer per timme. Baserad på processinguppgiften 4.3.</p>
+
+    <label>Kilometer per timme.</label>
+    <input id="Kilometerpertimme" type="number" placeholder="Kilometer i timmen" oninput="kmhtillms(this.value)"
+      onchange="kmhtillms(this.value)">
+  </p>
+  <p>Blir <span id="meterpersekund"></span> meter per sekund</p>
+
+</body>
+
+</html>
